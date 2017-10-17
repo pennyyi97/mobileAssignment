@@ -51,6 +51,8 @@ public class Main2Activity extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(), "GUEST 님 환영합니다.", Toast.LENGTH_SHORT).show();
 
+        finish();
+
     }
 
     public void backLogin(View v){

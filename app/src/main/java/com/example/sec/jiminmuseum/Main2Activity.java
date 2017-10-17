@@ -17,10 +17,10 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         //spinner 사용
-        String[] str=getResources().getStringArray(R.array.emailArray); //arrays파일에 넣은 이메일주소 가져오기
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,str);//spinner에 가져온 주소 넣기
+        String[] str=getResources().getStringArray(R.array.emailArray); //arrays파일에 넣은 이메일주소 str배열에 넣기
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,str);//spinner와 리스트 연결
         Spinner spi = (Spinner)findViewById(R.id.spinner);
-        spi.setAdapter(adapter);
+        spi.setAdapter(adapter);//spinner의 어댑터 지정
 
         spi.setOnItemSelectedListener(
                 new AdapterView.OnItemSelectedListener(){

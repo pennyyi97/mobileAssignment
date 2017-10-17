@@ -17,8 +17,9 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:text="경빈's favorite picture"
+            android:gravity="center_vertical"
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="24sp" />
